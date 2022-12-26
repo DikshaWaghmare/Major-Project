@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+.about-img-1 {
+  background-image: url(../assest/Images/welcome_to_the_beach-wallpaper-2560x1440.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  filter: brightness(60%);
+  height: 450px;
+}
+.about-img-1 > div {
+  padding-top: 200px;
+}
+.about-travelwithus {
+  background-image: url(../assest/Images/about-bg-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.about-right-part1 {
+  padding: 50px;
+  text-align: left;
+}
+.about-right-part1 > p {
+  text-transform: capitalize;
+}
+.overlap-img1 {
+  height: 350px;
+  width: 300px;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.overlap-img2 {
+  height: 350px;
+  width: 300px;
+  margin-left: 43%;
+  margin-top: 180px;
+}
+.team-bg {
+  height: 500px;
+  background-image: url(../assest/Images/bg-2-about.png);
+  background-position: center;
+  background-size: 100% 100%;
+}
+.team1-text{
+  position:relative ;
+  height: 80px;
+  top:-80px; 
+  left:0px;
+  color: white;
+  background: rgb(29, 26, 26);
+  text-align: center;
+  padding-top:18px ;
+}
+.team1-text>p{
+  color: rgb(173, 166, 166);
+}
+.abc{
+  display: flex;
+  flex-direction: row;
+}
+/* ----------------ABOUT PART------------- */
+@media screen and (max-width: 400px) {
+  .overlap-img1, .overlap-img2{
+    display: none;
+  }
+  .about-right-part1{
+    display: none;
+  }
+  .abc{
+    display: flex;
+    flex-direction: column;
+  }
+  .team-img{
+    /* width: 100%; */
+    margin: 20px;
+  }
+}
