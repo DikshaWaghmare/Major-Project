@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 .about-img-1 {
@@ -7,18 +7,23 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 10px;
-  filter: brightness(60%);
   height: 450px;
+  position: relative;
 }
-.about-img-1 > div {
-  padding-top: 200px;
+.about-img1-bg-color {
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 450px;
+  padding-top: 180px;
 }
 .about-travelwithus {
   background-image: url(../assest/Images/about-bg-1.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
+  background-size: 100% 100%;
+  position: relative;
 }
 .about-right-part1 {
   padding: 50px;
@@ -26,57 +31,565 @@
 }
 .about-right-part1 > p {
   text-transform: capitalize;
+  font-size: 20px;
+  padding-right: 90px;
+}
+.overlap-img2 {
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  margin-left: 300px;
+  margin-top: -230px;
 }
 .overlap-img1 {
   height: 350px;
   width: 300px;
-  position: absolute;
-  margin-left: 10%;
+  position: relative;
+  margin-left: 150px;
   margin-top: 50px;
-}
-.overlap-img2 {
-  height: 350px;
-  width: 300px;
-  margin-left: 43%;
-  margin-top: 180px;
+  z-index: 1;
 }
 .team-bg {
-  height: 500px;
+  height: auto;
   background-image: url(../assest/Images/bg-2-about.png);
   background-position: center;
   background-size: 100% 100%;
 }
-.team1-text{
-  position:relative ;
+.team-img {
+  position: relative;
+  height: 400px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.team1-text {
+  position: absolute;
   height: 80px;
-  top:-80px; 
-  left:0px;
+  width: 91.5%;
+  top: 79.9%;
+  left: 20px;
   color: white;
   background: rgb(29, 26, 26);
   text-align: center;
-  padding-top:18px ;
+  padding-top: 18px;
 }
-.team1-text>p{
+.team1-text > p {
   color: rgb(173, 166, 166);
 }
-.abc{
-  display: flex;
-  flex-direction: row;
+.row-style {
+  margin-top: 30px;
+  padding-left: 50px;
 }
-/* ----------------ABOUT PART------------- */
+.box-circle {
+  margin-left: 18px;
+}
+.box-line {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+/* footer part */
 @media screen and (max-width: 400px) {
-  .overlap-img1, .overlap-img2{
-    display: none;
+  .f-icons,
+  .font-icon {
+    text-align: center;
+    padding: 10px;
   }
-  .about-right-part1{
-    display: none;
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    order: 3;
   }
-  .abc{
+  .footer-style {
+    padding: 10px 10px 10px 10px;
+  }
+  /* about 1st image */
+  .about-img-1 {
+    height: 300px;
+  }
+  .about-img1-bg-color {
+    height: 300px;
+    padding-top: 100px;
+  }
+  /* travel with us */
+  .about-travelwithus {
+    background-image: none;
+  }
+  .overlap-img1 {
+    height: 230px;
+    width: 180px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  .overlap-img2 {
+    position: absolute;
+    height: 230px;
+    width: 180px;
+    margin-left: 150px;
+    margin-top: -140px;
+  }
+  .about-left-part1 {
+    background-image: url(../assest/Images/about-bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .about-right-part1 > p,
+  h2 {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 15px;
+  }
+  /* trip guide team */
+  .team-bg {
+    background-image: none;
+  }
+  .team1-bg {
+    height: auto;
+    background-image: url(../assest/Images/bg-2-about.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .team-img {
+    margin-top: 20px;
+  }
+  .row-style {
+    padding-left: 10px;
+  }
+  /* vacation steps */
+  .xyz {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  .xyz > .box {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .xyz > .box-img {
+    margin-left: 30px;
+  }
+
+  .box-line {
+    border-left: 1px solid black;
+    border-bottom: none;
+    height: 250px;
+    margin-left: 30px;
+    margin-bottom: -2px;
+  }
+  .box {
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  /* footer part */
+  .f-icons,
+  .font-icon {
+    text-align: center;
+    padding: 10px;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    order: 3;
+  }
+  /* about 1st image */
+  .about-img-1 {
+    height: 300px;
+  }
+  .about-img1-bg-color {
+    height: 300px;
+    padding-top: 100px;
+  }
+  /* travel with us */
+  .about-travelwithus {
+    background-image: none;
+  }
+  .overlap-img1 {
+    height: 260px;
+    width: 210px;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  .overlap-img2 {
+    position: absolute;
+    height: 260px;
+    width: 210px;
+    margin-left: 170px;
+    margin-top: -140px;
+  }
+  .about-left-part1 {
+    background-image: url(../assest/Images/about-bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .about-right-part1 > p,
+  h2 {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 15px;
+  }
+  /* trip guide team */
+  .team-bg {
+    background-image: none;
+  }
+  .team1-bg {
+    height: auto;
+    background-image: url(../assest/Images/bg-2-about.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .team-img {
+    margin-top: 20px;
+  }
+  .row-style {
+    padding-left: 10px;
+  }
+  /* vacation steps */
+  .xyz {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  .xyz > .box {
+    margin-right: 30px;
+    margin-left: 0px;
+    width: 30px;
+  }
+  .xyz > .box-img {
+    margin-left: 30px;
+  }
+  .box-line {
+    border-left: 1px solid black;
+    border-bottom: none;
+    height: 250px;
+    margin-left: 30px;
+    margin-bottom: -2px;
+  }
+}
+
+/* For (tablets & large phones) */
+@media screen and (min-width: 600px) {
+  /* footer part */
+  .f-icons,
+  .font-icon {
+    text-align: center;
+    padding: 10px;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    order: 3;
+  }
+  .about-img-1 {
+    height: 450px;
+  }
+  .about-img1-bg-color {
+    height: 450px;
+    padding-top: 180px;
+  }
+  /* travel with us */
+  .overlap-img2 {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    margin-left: 280px;
+    margin-top: -190px;
+  }
+  .overlap-img1 {
+    height: 300px;
+    width: 250px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  /* trip guide team */
+  .team-bg {
+    background-image: none;
+  }
+  .team-img {
+    position: relative;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .team1-text {
+    position: absolute;
+    height: 80px;
+    width: 91.5%;
+    top: 79.9%;
+    left: 20px;
+    color: white;
+    background: rgb(29, 26, 26);
+    text-align: center;
+    padding-top: 18px;
+  }
+  .team1-text > p {
+    color: rgb(173, 166, 166);
+  }
+  .row-style {
+    margin-top: 30px;
+    padding-left: 50px;
+  }
+  /* vacation steps */
+  .xyz {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  .xyz > .box {
+    margin-right: 30px;
+    margin-left: 0px;
+    width: 30px;
+  }
+  .xyz > .box-img {
+    margin-left: 30px;
+  }
+  .box-line {
+    border-left: 1px solid black;
+    border-bottom: none;
+    height: 250px;
+    margin-left: 30px;
+    margin-bottom: -2px;
+  }
+}
+
+/* For desktop */
+@media screen and (min-width: 768px) {
+  /* footer part */
+  .f-icons {
+    text-align: end;
+  }
+  .footer-style {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .copyright {
+    text-align: start;
+    font-size: 15px;
+    order: 0;
+  }
+  /* travel with us */
+  .about-travelwithus {
+    background-image: none;
+  }
+  .about-right-part1 > p {
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-right: 90px;
+  }
+  .overlap-img2 {
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    margin-left: 300px;
+    margin-top: -230px;
+  }
+  .overlap-img1 {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  .about-left-part1 {
+    background-image: url(../assest/Images/about-bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  /* trip guide team */
+  .team-bg {
+    height: auto;
+    background-image: url(../assest/Images/bg-2-about.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .team1-bg {
+    background-image: none;
+  }
+  .team-img {
+    position: relative;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .team1-text {
+    position: absolute;
+    height: 80px;
+    width: 91.5%;
+    top: 79.9%;
+    left: 20px;
+    color: white;
+    background: rgb(29, 26, 26);
+    text-align: center;
+    padding-top: 18px;
+  }
+  .team1-text > p {
+    color: rgb(173, 166, 166);
+  }
+  .row-style {
+    margin-top: 30px;
+    padding-left: 50px;
+  }
+  /* vacation steps */
+  .xyz {
     display: flex;
     flex-direction: column;
+    text-align: start;
   }
-  .team-img{
-    /* width: 100%; */
-    margin: 20px;
+  .xyz > .box {
+    margin-right: 30px;
+    margin-left: 0px;
+    height: auto;
+    width: 111%;
+    padding: 0px;
+  }
+  .xyz > .box-img {
+    margin-left: 0px;
+  }
+  .box-circle {
+    margin-left: 7px;
+  }
+  .xyz > .box-text {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .box-line {
+    border-left: none;
+    border-bottom: 1px solid black;
+    height: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* footer part */
+  .f-icons {
+    text-align: end;
+  }
+  .footer-style {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .copyright {
+    text-align: start;
+    font-size: 15px;
+    order: 0;
+  }
+  /* travel with us */
+  .about-travelwithus {
+    background-image: url(../assest/Images/about-bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  .about-left-part1 {
+    background-image: none;
+  }
+  .about-right-part1 > p {
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-right: 90px;
+  }
+  .overlap-img2 {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    margin-left: 250px;
+    margin-top: -190px;
+  }
+  .overlap-img1 {
+    height: 300px;
+    width: 250px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  /* vacation steps */
+  .xyz {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .xyz > .box {
+    margin-right: 30px;
+    margin-left: 0px;
+    height: auto;
+    width: 111%;
+    padding: 0px;
+  }
+  .xyz > .box-img {
+    margin-left: 0px;
+  }
+  .box-circle {
+    margin-left: 7px;
+  }
+  .xyz > .box-text {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .box-line {
+    border-left: none;
+    border-bottom: 1px solid black;
+    height: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 13px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* footer part */
+  .f-icons {
+    text-align: end;
+  }
+  .footer-style {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .copyright {
+    text-align: start;
+    font-size: 15px;
+    order: 0;
+  }
+  /* travel with us */
+  .about-right-part1 > p {
+    text-transform: capitalize;
+    font-size: 19px;
+    padding-right: 90px;
+  }
+  .overlap-img2 {
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    margin-left: 300px;
+    margin-top: -230px;
+  }
+  .overlap-img1 {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 50px;
+    z-index: 1;
   }
 }

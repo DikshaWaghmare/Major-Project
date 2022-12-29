@@ -4,12 +4,21 @@
 
 .home-img-1 {
   height: 450px;
+  position: relative;
   width: 100%;
   border-radius: 20px;
   background-image: url(../assest/Images/home-bg-section-1.jpg);
   background-position: center;
   background-size: 100% 100%;
-  filter: brightness(80%);
+}
+.bg-color,.left-blog-bg-color,.right-blog1-bg-color,.right-blog2-bg-color {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.bg-color{
+  height: 450px;
 }
 .home-img1-text {
   height: 500px;
@@ -34,41 +43,52 @@
   background-position: center;
   background-size: 100% 100%;
   height: 500px;
+  position: relative;
   border-radius: 10px;
-  filter: brightness(70%);
+}
+.left-blog-bg-color{
+  height: 500px;
 }
 .right-blog1 {
   background-image: url(../assest/Images/window-view.jpg);
   background-position: center;
   background-size: 100% 100%;
+  position: relative;
+  height: 238px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.right-blog1-bg-color,.right-blog2-bg-color{
+height: 238px;
 }
 .right-blog2 {
   background-image: url(../assest/Images/traele-packing.jpg);
   background-position: center;
   background-size: cover;
-}
-.right-blog1,
-.right-blog2 {
+  position: relative;
   height: 238px;
   margin-bottom: 20px;
   border-radius: 10px;
-  filter: brightness(70%);
 }
-/* .left-blog:hover,  .right-blog1:hover, .right-blog2:hover{
+
+.left-blog:hover,  .right-blog1:hover, .right-blog2:hover{
     transform: scale(1.1);
-} */
+}
 .happy-customer {
   background-image: url(../assest/Images/wp3108661.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 500px;
+  position: relative;
 }
 .happy-customer-text {
   padding-top: 50px;
   font-size: 15px;
   text-align: start;
   background: rgba(251, 250, 250, 0.5);
+  position: absolute;
+  height: 500px;
 }
 .costomer-img {
   height: 90%;

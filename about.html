@@ -11,118 +11,6 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <!-- for bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-    <style>
-        /* footer part */
-        @media screen and (max-width: 400px) {
-
-            .f-icons,
-            .font-icon {
-                text-align: center;
-                padding: 10px;
-            }
-
-            .copyright {
-                text-align: center;
-                font-size: 14px;
-                order: 3;
-            }
-
-            .footer-style {
-                padding: 10px 10px 10px 10px;
-            }
-        }
-
-        @media screen and (min-width: 400px) {
-
-            /* footer part */
-            .f-icons,
-            .font-icon {
-                text-align: center;
-                padding: 10px;
-            }
-
-            .copyright {
-                text-align: center;
-                font-size: 14px;
-                order: 3;
-            }
-        }
-
-        /* For (tablets & large phones) */
-        @media screen and (min-width: 600px) {
-
-            /* footer part */
-            .f-icons,
-            .font-icon {
-                text-align: center;
-                padding: 10px;
-            }
-
-            .copyright {
-                text-align: center;
-                font-size: 14px;
-                order: 3;
-            }
-        }
-
-        /* For desktop */
-        @media screen and (min-width: 768px) {
-
-            /* footer part */
-            .f-icons {
-                text-align: end;
-            }
-
-            .footer-style {
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-
-            .copyright {
-                text-align: start;
-                font-size: 15px;
-                order: 0;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-
-            /* footer part */
-            .f-icons {
-                text-align: end;
-            }
-
-            .footer-style {
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-
-            .copyright {
-                text-align: start;
-                font-size: 15px;
-                order: 0;
-            }
-        }
-
-        @media screen and (min-width: 1280px) {
-
-            /* footer part */
-            .f-icons {
-                text-align: end;
-            }
-
-            .footer-style {
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-
-            .copyright {
-                text-align: start;
-                font-size: 15px;
-                order: 0;
-            }
-        }
-    </style>
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif">
@@ -142,10 +30,10 @@
                     <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-normal fs-5 mx-auto">
                             <li class="nav-item" style="margin-right: 30px">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                <a class="nav-link" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item" style="margin-right: 30px">
-                                <a class="nav-link" href="./about.html">About</a>
+                                <a class="nav-link active" aria-current="page" href="./about.html">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./contact.html">Contact</a>
@@ -156,12 +44,15 @@
             </nav>
         </header>
     </div>
+
     <!-- starting part -->
     <section>
         <div class="container about-img-1">
-            <div class="text-white text-center mx-auto fs-5">
-                <h1><b>ABOUT</b></h1>
-                <p>Home | About</p>
+            <div class="about-img1-bg-color">
+                <div class="text-white text-center mx-auto fs-5">
+                    <h1><b>ABOUT</b></h1>
+                    <p>Home | About</p>
+                </div>
             </div>
         </div>
     </section>
@@ -169,18 +60,18 @@
     <!-- lets go travel... part -->
     <section class="mt-5">
         <div class="">
-            <div class="about-travelwithus d-flex row justify-content-center">
-                <div class="col-lg-6 col-md-6 col-sm-12 about-left-part1">
-                    <div class="overlap-img1 border border-dark">
+            <div class="about-travelwithus  d-flex row justify-content-center row-travewithus">
+                <div class="col-lg-6 col-md-12 col-sm-12 about-left-part1">
+                    <div class="overlap-img1 border">
                         <img src="./assest/Images/about-img-11.jpg"
                             style="height: 100%; width: 100%; border: 4px solid white" />
                     </div>
-                    <div class="overlap-img2">
+                    <div class="overlap-img2 border">
                         <img src="./assest/Images/about-image-2.jpg"
                             style="height: 100%; width: 100%; border: 4px solid white" />
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 about-right-part1" style="padding-right: 90px">
+                <div class="col-lg-6 col-md-12 col-sm-12 about-right-part1 ">
                     <h2>LETS GO TRAVEL WITH US</h2>
                     <p>
                         Founded in 2006, Backpack Story Was Established By Driven,
@@ -206,39 +97,55 @@
 
     <!-- Team part -->
     <section>
-        <div class="team-bg">
+        <div class="team-bg mt-2">
             <h3 class="fw-bold ps-5 pt-4">MEET OUR TEAM</h3>
-            <div class="justify-content-evenly mt-3 abc" style="height: auto">
-                <div class="team-img" style="height: 400px; width: 20%">
-                    <div class="p-0" style="width: 18rem">
+            <div class="justify-content-evenly  row row-style" style="height: auto">
+                <div class=" col-lg-3 col-md-3 col-sm-12 team1-bg">
+                    <div class="team-img">
                         <img src="./assest/Images/team-1.jpg" style="height: 100%; width: 100%" class=""
-                            alt="team-guide-1-img" />
+                            alt="team-member1" />
                         <div class="team1-text">
                             <h5 class="fw-bold m-0">CHANDRA VANCOVA</h5>
                             <p class="p-0 font-monospace">Tour Guide</p>
                         </div>
                     </div>
                 </div>
-                <div class="team-img" style="height: 400px; width: 20%">
-                    <div class="p-0" style="width: 18rem; border: none">
-                        <img src="./assest/Images/team-2.jpg" style="height: 100%; width: 100%" class="" alt="..." />
+                <div class=" col-lg-3 col-md-3 col-sm-12 abc">
+                    <div class="team-img">
+                        <img src="./assest/Images/team-2.jpg" style="height: 100%; width: 100%" class=""
+                            alt="team-member2" />
                         <div class="team1-text">
                             <h5 class="fw-bold m-0">JON SMITH</h5>
                             <p class="p-0 font-monospace">Tour Guide</p>
                         </div>
                     </div>
                 </div>
-                <div class="team-img" style="height: 400px; width: 20%">
-                    <div class="p-0" style="width: 18rem">
+                <div class=" col-lg-3 col-md-3 col-sm-12 abc">
+                    <div class="team-img">
                         <img src="./assest/Images/team-3.jpg" style="height: 100%; width: 100%" class=""
-                            alt="team-member1" />
+                            alt="team-member3" />
                         <div class="team1-text">
                             <h5 class="fw-bold m-0">JESSICA VANCOVA</h5>
                             <p class="p-0 font-monospace">Tour Guide</p>
                         </div>
                     </div>
                 </div>
-                <div class="border border-danger team-img" style="height: 400px; width: 20%; visibility: hidden"></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 abc" style="visibility: hidden;">
+                </div>
+
+
+
+
+                <!-- <div class="team-img border border-dark">
+                    
+                </div>
+                <div class="team-img border border-dark" >
+                    
+                </div>
+                <div class="team-img border border-dark">
+                    
+                </div>
+                <div class="team-img"></div> -->
             </div>
             <!-- <div class=" row justify-content-evenly border team-div">
                     
@@ -255,56 +162,64 @@
             <div class="py-5">
                 <h2 class="fw-bold">A FEW SIMPLE STEPS FOR DREAM VACATION</h2>
             </div>
-            <div class="d-flex row mb-5 justify-content-center">
-                <div class="col-lg-3 row p-0">
-                    <div class="p-0" style="height:40px;"><img src="./assest/Images/walk.svg" class="" /></div>
-                    <div class="ps-2 pe-0  row  pb-2">
-                        <div class="border col-2 border-danger rounded-circle p-0" style="height:23px; width:23px;">
+            <div class="d-flex row mb-5 justify-content-center steps-row">
+
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0 xyz ">
+                    <div class="p-0 box-img" style="height:40px;"><img src="./assest/Images/walk.svg" class="" /></div>
+                    <div class="p-0 row box">
+                        <div class="border col-2 border-dark rounded-circle box-circle "
+                            style="height:23px; width:23px;">
                         </div>
-                        <div class=" col-10 p-0">
-                            <hr>
+                        <div class="col-10  box-line">
                         </div>
                     </div>
-                    <div class="pt-2 ps-0">
+                    <div class="ps-0 box-text">
                         <h3 class="fw-bold m-0">3241</h3>
-                        <p class=" p-0">HAPPY CUSTOMERS</p>
+                        <p class="p-0">HAPPY CUSTOMERS</p>
                     </div>
                 </div>
-                <div class="col-lg-3 row p-0">
-                    <div class="p-0" style="height:40px;"><img src="./assest/Images/plane.svg" class="" /></div>
-                    <div class="ps-2 pe-0  row  pb-2">
-                        <div class="border col-2 border-danger rounded-circle p-0" style="height:23px; width:23px;">
+
+                <div class="col-lg-3 col-md-3 col-sm-12 xyz p-0">
+                    <div class="p-0 box-img" style="height:40px;"><img src="./assest/Images/plane.svg" class="" /></div>
+                    <div class="p-0 row  box">
+                        <div class="border col-2 border-dark rounded-circle box-circle "
+                            style="height:23px; width:23px;">
                         </div>
-                        <div class=" col-10 p-0">
-                            <hr>
+                        <div class="col-10 box-line">
                         </div>
                     </div>
-                    <div class="pt-2 ps-0">
+                    <div class="ps-0 box-text">
                         <h3 class="fw-bold m-0">787</h3>
                         <p class="p-0">FLIGHT TO TRAVEL</p>
                     </div>
                 </div>
-                <div class="col-lg-3 row p-0">
-                    <div class="p-0" style="height:40px;"><img src="./assest/Images/apartment.svg" class="" /></div>
-                    <div class="ps-2 pe-0 row  pb-2">
-                        <div class="border col-2 border-danger rounded-circle p-0" style="height:23px; width:23px;">
+
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0 xyz">
+                    <div class="p-0 box-img" style="height:40px;"><img src="./assest/Images/apartment.svg" class="" />
+                    </div>
+                    <div class="p-0 row box">
+                        <div class="border col-2 border-dark rounded-circle box-circle "
+                            style="height:23px; width:23px;">
                         </div>
-                        <div class=" col-10 p-0">
-                            <hr>
+                        <div class="col-10 box-line">
                         </div>
                     </div>
-                    <div class="pt-2 ps-0">
+                    <div class=" ps-0 box-text">
                         <h3 class="fw-bold m-0">1203</h3>
                         <p class=" p-0">HOTEL TO STAY</p>
                     </div>
                 </div>
-                <div class="col-lg-3 row p-0">
-                    <div class="p-0" style="height:40px;"><img src="./assest/Images/ship.svg" class="" /></div>
-                    <div class="ps-2 pe-0 row  pb-2">
-                        <div class="border col-2 border-danger rounded-circle p-0" style="height:23px; width:23px;"></div>
-                        <div class=" col-10 p-0"><hr></div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0 xyz">
+                    <div class="p-0 box-img" style="height:40px;"><img src="./assest/Images/ship.svg" class="" /></div>
+                    <div class="p-0 row box">
+                        <div class="border col-2 border-dark rounded-circle box-circle "
+                            style="height:23px; width:23px;">
+                        </div>
+                        <div class="col-10 box-line">
+                        </div>
                     </div>
-                    <div class="pt-2 ps-0">
+                    <div class="ps-0 box-text">
                         <h3 class="fw-bold m-0">9874</h3>
                         <p class=" p-0">AWESOME TOUR</p>
                     </div>
@@ -327,25 +242,27 @@
                     <div class="d-flex row footer-link">
                         <div class="col-4 text-center">
                             <li class="" style="list-style-type: none">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                         </div>
                         <div class="col-4 text-center">
                             <li class="" style="list-style-type: none">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                         </div>
                         <div class="col-4 text-center">
                             <li class="" style="list-style-type: none">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 f-icons">
-                    <i class="bi bi-facebook fs-4 font-icon"></i>
-                    <i class="bi bi-linkedin fs-4 font-icon"></i>
-                    <i class="fa-brands fa-square-instagram font-icon" style="font-size: 27px"></i>
+                    
+                    <a class="text-dark" href="#"><i class="bi bi-facebook fs-4 font-icon"></i></a>
+                    <a class="text-dark" href="#"><i class="bi bi-linkedin fs-4 font-icon"></i></a>
+                    <a class="text-dark" href="#"><i class="fa-brands fa-square-instagram font-icon" style="font-size: 27px"></i></a>
+                    
                 </div>
             </div>
         </div>

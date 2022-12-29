@@ -1,0 +1,249 @@
+.contact-bg1 {
+  background-image: url(../assest/Images/reception.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.bg-color {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.contact-text {
+  text-align: center;
+  padding-top: 170px;
+  color: white;
+}
+.contact-map {
+  background-image: url(../assest/Images/map.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact-form {
+  background-image: url(../assest/Images/bg-contacts.png);
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact-form-input{
+  color: white;
+}
+.form-bg2 {
+  height: auto;
+  width: 68%;
+  background-color: rgb(47, 79, 105);
+}
+
+@media screen and (max-width: 400px) {
+  .f-icons,
+  .font-icon {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    order: 3;
+  }
+
+  .footer-style {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .journey-text {
+    padding-left: 0px;
+  }
+
+  .contact-form {
+    background-image: none;
+  }
+
+  .contact-form-text,
+  .contact-form-input {
+    width: 100%;
+    padding: 50px;
+    padding-top: 0px;
+  }
+  .form-bg2 {
+    height: auto;
+    width: 100%;
+    background-color: rgb(47, 79, 105);
+  }
+  input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .f-icons,
+  .font-icon {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    order: 3;
+  }
+  input,
+  .message {
+    width: 100%;
+  }
+  .form-bg2 {
+    height: auto;
+    width: 100%;
+    background-color: rgb(47, 79, 105);
+  }
+  .journey-text {
+    padding-left: 0px;
+  }
+  .contact-form {
+    background-image: none;
+  }
+
+  .contact-form-text,
+  .contact-form-input {
+    width: 100%;
+    padding: 50px;
+    padding-top: 0px;
+  }
+}
+
+/* For (tablets & large phones) */
+@media screen and (min-width: 600px) {
+  .f-icons,
+  .font-icon {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    order: 3;
+  }
+  .contact-form-text,
+  .contact-form-input {
+    width: 100%;
+    padding: 50px;
+    padding-top: 0px;
+  }
+
+  input,
+  .message {
+    width: 100%;
+  }
+  .journey-text {
+    padding-left: 0px;
+  }
+
+  .form-bg2 {
+    width: 100%;
+  }
+}
+
+/* For desktop */
+@media screen and (min-width: 768px) {
+  .f-icons {
+    text-align: end;
+  }
+
+  .footer-style {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .copyright {
+    text-align: start;
+    font-size: 15px;
+    order: 0;
+  }
+
+  .journey-text {
+    padding-left: 40px;
+  }
+  .contact-form-text,
+  .contact-form-input {
+    padding: 0px;
+  }
+  .contact-form {
+    background-image: url(../assest/Images/bg-contacts.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .form-bg2 {
+    height: auto;
+    width: 68%;
+    background-color: rgb(47, 79, 105);
+  }
+  input,
+  .message {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .f-icons {
+    text-align: end;
+  }
+
+  .footer-style {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .copyright {
+    text-align: start;
+    font-size: 15px;
+    order: 0;
+  }
+  .contact-form {
+    background-image: url(../assest/Images/bg-contacts.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  input {
+    width: 45%;
+    height: 35px;
+  }
+  .journey-text {
+    padding-left: 0px;
+  }
+  .message {
+    width: 92%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .f-icons {
+    text-align: end;
+  }
+
+  .footer-style {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .copyright {
+    text-align: start;
+    font-size: 15px;
+    order: 0;
+  }
+  .journey-text {
+    padding-left: 40px;
+  }
+}
